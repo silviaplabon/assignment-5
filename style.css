@@ -1,3 +1,14 @@
-#checkbox{
-    color:#F06C4E;
+#cardDesign{
+    background-color: #F8F7F5;
+}
+a{
+    color:black!important;
+}
+#inputButton{
+    background-color:#F06C4E;
+    border-color:#F06C4E;
+}
+.ingredientImg{
+    height:550px;
+    border-radius:20px!important;
 }

@@ -19,14 +19,15 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <a class="nav-link ms-2 fw-bold fs-5" style="color:black;width:300px;">Hungry Monster</a>
+                    <img src="hungry.png" class="ms-2" style="width:120px;height:80px;">
+                  </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNavAltMarkup">
-                    <div class="navbar-nav" style="color:black;">
+                    <div class="navbar-nav">
                         <a class="nav-link px-3 fs-5" href="#">Home</a>
                         <a class="nav-link px-3 fs-5" href="#">About</a>
                         <a class="nav-link px-3 fs-5" href="#">Recipes</a>
@@ -38,28 +39,29 @@
     </section>
     <!-- end header section -->
     <!-- START top navbar section -->
-    <section class="container">
+    <section class="container" id="searchBox">
         <form class="col-md-6 m-auto py-3">
             <div class="input-group mb-3">
                 <input id="inputText" type="text" class="form-control" placeholder="&#128269; Search For Meal ...">
                 <div class="input-group-append">
-                    <button onclick="searchDetails()" type="button" class="btn btn-success">Search</button>
+                    <button onclick="searchDetails()" id="inputButton" type="button" class="btn btn-success">Search</button>
                 </div>
             </div>
         </form>
     </section>
     <!--END top navbar section -->
-    <!-- START image Gradient Section -->
-    <section class="container mb-4 pb-3 " style="width:50%;margin:0 auto;">
-        <div id="imageShow">
+    <!-- START image ingredient Section -->
+    <section class="container mb-4 pb-3 " style="width:44%;margin:0 auto;">
+        <div id="imageShow" >
         </div>
-        <h2 id="title" class="mt-4"></h2>
-        <h4 id="subtitle" class="mt-3"></h4>
-        <ul class="list-group" id="detailsIngredient"></ul>
+        <div id="detailsSection">
+        </div>
     </section>
     <!--END image Gradient Seciton-->
     <!-- START detailsInfo section -->
     <section class="container mt-2" id="detailsInfo">
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="rowDiv"></div>
+        <div class="row row-cols-1 ms-5" id="errorInfo"></div>
     </section>
     <!-- END detailsInfo section -->
     <script src="script.js"></script>
